@@ -111,3 +111,29 @@ function isEven(i){
   return find(1);
 }
 console.log(isEven(-10));
+
+
+function countBs(string){
+  let result = 0;
+
+  for(let count=0; count<string.length;count++){
+    if(string.charAt(count)== "B"){
+      result++;
+    }
+  }
+  return result;
+}
+// countBs("BBC");
+// console.log(countBs("BBBC"));
+
+function countChar(string, item){
+  let result = 0;
+
+  for(let count = 0; count<string.length; count++){
+    if (string.charAt(count)==item){
+      result++;
+    }
+  }
+  return result;
+}
+console.log(countChar("pffft","f"));
