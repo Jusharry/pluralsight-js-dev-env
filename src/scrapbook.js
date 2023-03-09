@@ -97,17 +97,17 @@ for(let counter=0; counter<=6;counter++){
 // console.log(findMin(0,10));
 // console.log(findMin(0,-10));
 
+
+// let value = value => value*value;
 function isEven(i){
   function find(value){
-    if (i==0){
+    if ((i==0)||(i%2==0)){
       return true;
-    }else if(i * value ==1){
+    }else if((i ==value)||(i%2!=0)){
       return false;
-   }else if((i-2)%2==0){
-      return true;
-  }
+    }
 
   }
   return find(1);
 }
-console.log(isEven(-5));
+console.log(isEven(-10));
